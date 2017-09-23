@@ -8,11 +8,11 @@
 - [Running each project](#running-each-project)
 
 ### Projects
-- [counter](https://github.com/ooade/vuex-examples/tree/counter)
-- [simple-todo](https://github.com/ooade/vuex-examples/tree/simple-todo)
-- [todo](https://github.com/ooade/vuex-examples/tree/todo)
-- [shopping-cart](https://github.com/ooade/vuex-examples/tree/shopping-cart)
-- [auth](https://github.com/ooade/vuex-examples/tree/auth)
+- [counter](https://github.com/ooade/vuex-examples/tree/counter) [[*View App*](https://vuex-counter.surge.sh)]
+- [simple-todo](https://github.com/ooade/vuex-examples/tree/simple-todo) [[*View App*](https://vuex-simple-todo.surge.sh)]
+- [todo](https://github.com/ooade/vuex-examples/tree/todo) [[*View App*](https://vuex-todo.surge.sh)]
+- [shopping-cart](https://github.com/ooade/vuex-examples/tree/shopping-cart) [[*View App*](https://vuex-shopping-cart.surge.sh)]
+- [auth](https://github.com/ooade/vuex-examples/tree/auth) [[*View App*](https://vuex-auth.now.sh)]
 - [*Make request*](https://github.com/ooade/vuex-examples/issues/new)
 
 ### Getting Started
