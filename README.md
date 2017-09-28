@@ -13,6 +13,7 @@
 - [todo](https://github.com/ooade/vuex-examples/tree/todo) [[*View App*](https://vuex-todo.surge.sh)]
 - [shopping-cart](https://github.com/ooade/vuex-examples/tree/shopping-cart) [[*View App*](https://vuex-shopping-cart.surge.sh)]
 - [auth](https://github.com/ooade/vuex-examples/tree/auth) [[*View App*](https://vuex-auth.now.sh)]
+- [gallery](https://github.com/ooade/vuex-examples/tree/gallery) [[*View App*](https://vuex-gallery.surge.sh)]
 - [*Make request*](https://github.com/ooade/vuex-examples/issues/new)
 
 ### Getting Started
@@ -30,7 +31,7 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-> Any additional details will be stated on the project's branch. 
+> Any additional details will be stated on the project's branch.
 > Happy Coding!
 
 ## License
