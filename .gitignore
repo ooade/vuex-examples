@@ -1,5 +1,4 @@
 .DS_Store
-node_modules/
 dist/
 npm-debug.log
 yarn-error.log
@@ -10,6 +9,7 @@ gallery/node_modules/
 simple-todo/node_modules/
 todo/node_modules/
 firestore/node_modules/
+starter-files/node_modules/
 
 # Editor directories and files
 .idea
