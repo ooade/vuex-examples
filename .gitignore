@@ -8,6 +8,7 @@ counter/node_modules/
 shopping-cart/node_modules/
 gallery/node_modules/
 simple-todo/node_modules/
+todo/node_modules/
 
 # Editor directories and files
 .idea
