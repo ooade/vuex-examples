@@ -40,7 +40,6 @@ npm --prefix auth run dev
 npm --prefix auth run build
 ```
 
-> Any additional details will be stated on the project's branch.
 > Happy Coding!
 
 ## License
