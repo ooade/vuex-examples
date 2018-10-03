@@ -1,5 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: './src/main.js',
@@ -8,20 +9,21 @@ module.exports = {
 		publicPath: '/dist/',
 		filename: 'build.js'
 	},
+	mode: process.env.NODE_ENV,
 	module: {
 		rules: [
 			{
 				test: /\.vue$/,
-				loader: 'vue-loader',
-				options: {
-					loaders: {}
-					// other vue-loader options go here
-				}
+				loader: 'vue-loader'
 			},
 			{
 				test: /\.js$/,
 				loader: 'babel-loader',
 				exclude: /node_modules/
+			},
+			{
+				test: /\.css$/,
+				use: ['vue-style-loader', 'css-loader']
 			},
 			{
 				test: /\.(png|jpg|gif|svg)$/,
@@ -40,11 +42,12 @@ module.exports = {
 	performance: {
 		hints: false
 	},
+	plugins: [new VueLoaderPlugin()],
 	devtool: '#eval-source-map'
-}
+};
 
 if (process.env.NODE_ENV === 'production') {
-	module.exports.devtool = '#source-map'
+	module.exports.devtool = '#source-map';
 	// http://vue-loader.vuejs.org/en/workflow/production.html
 	module.exports.plugins = (module.exports.plugins || []).concat([
 		new webpack.DefinePlugin({
@@ -61,5 +64,5 @@ if (process.env.NODE_ENV === 'production') {
 		new webpack.LoaderOptionsPlugin({
 			minimize: true
 		})
-	])
+	]);
 }
