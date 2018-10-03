@@ -3,11 +3,13 @@
 > This project aims to touch various aspects of Vuex while building several projects. Started off with Vue-CLI's [Webpack Simple](https://github.com/vuejs-templates/webpack-simple) template
 
 ## Contents
+
 - [Projects](#projects)
 - [Getting Started](#getting-started)
 - [Running each project](#running-each-project)
 
 ### Projects
+
 - starter-files: A hello-world example
 - auth: An Auth example with Vuex
 - counter: A simple counter implementation with Vuex
@@ -16,12 +18,14 @@
 - simple-todo: A Simple Todo implementation with Vuex
 - shopping-cart: A Shopping Cart implementation with Vuex
 - todo: A todo app implementation with Vuex
-- [*Make request*](https://github.com/ooade/vuex-examples/issues/new)
+- [_Make request_](https://github.com/ooade/vuex-examples/issues/new)
 
 ### Getting Started
+
 - Clone the Repo: `git clone https://github.com/ooade/vuex-examples.git`
 
 ### Running each project
+
 ```bash
 # install dependencies
 npm --prefix <project> install <project>
@@ -34,8 +38,9 @@ npm --prefix <project> run build
 ```
 
 Example: run the auth project
+
 ```bash
-npm --prefix auth install auth
+npm --prefix auth install
 npm --prefix auth run dev
 npm --prefix auth run build
 ```
@@ -43,4 +48,5 @@ npm --prefix auth run build
 > Happy Coding!
 
 ## License
+
 MIT
