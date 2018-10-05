@@ -10,14 +10,16 @@
 
 ### Projects
 
-- starter-files: A hello-world example
-- auth: An Auth example with Vuex
-- counter: A simple counter implementation with Vuex
-- firestore: A Simple FireStore implementation with Vuex
-- gallery: An Image Gallery implementation with Vuex
-- simple-todo: A Simple Todo implementation with Vuex
-- shopping-cart: A Shopping Cart implementation with Vuex
-- todo: A todo app implementation with Vuex
+Browse through each project by going through the folders as listed below.
+
+- **starter-files**: A hello-world example
+- **auth**: An Auth example with Vuex
+- **counter**: A simple counter implementation with Vuex
+- **firestore**: A Simple FireStore implementation with Vuex
+- **gallery**: An Image Gallery implementation with Vuex
+- **simple-todo**: A Simple Todo implementation with Vuex
+- **shopping-cart**: A Shopping Cart implementation with Vuex
+- **todo**: A todo app implementation with Vuex
 - [_Make request_](https://github.com/ooade/vuex-examples/issues/new)
 
 ### Getting Started
