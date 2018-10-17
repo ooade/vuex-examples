@@ -15,10 +15,13 @@
 - [simple-todo](https://github.com/ooade/vuex-examples/tree/simple-todo)
 - [shopping-cart](https://github.com/ooade/vuex-examples/tree/shopping-cart)
 - [todo](https://github.com/ooade/vuex-examples/tree/todo)
+- [vue-auth-vuex](https://github.com/christiannwamba/vue-auth-vuex)
+- [vuetube](https://github.com/BolajiOlajide/vuetube)
 - [*Make request*](https://github.com/ooade/vuex-examples/issues/new)
 
 ### Getting Started
 - Clone the Repo
+- `git checkout -b [name_of_your_new_branch]`
 - `git checkout [project]`
 
 ### Running each project
