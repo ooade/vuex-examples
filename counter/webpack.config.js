@@ -7,7 +7,6 @@ module.exports = {
 	entry: './src/main.js',
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		publicPath: '/dist/',
 		filename: '[name].bundle.js',
 		chunkFilename: '[name].bundle.js'
 	},
@@ -46,10 +45,20 @@ module.exports = {
 			vue$: 'vue/dist/vue.esm.js'
 		}
 	},
+	devServer: {
+		historyApiFallback: true,
+		noInfo: true,
+		hot: true
+	},
 	performance: {
 		hints: 'warning'
 	},
-	plugins: [new VueLoaderPlugin(), new HtmlWebpackPlugin()],
+	plugins: [
+		new VueLoaderPlugin(),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'index.html')
+		})
+	],
 	devtool: '#eval-source-map'
 };
 
