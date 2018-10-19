@@ -1,27 +1,35 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: './src/main.js',
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		publicPath: '/dist/',
-		filename: 'build.js'
+		filename: '[name].bundle.js',
+		chunkFilename: '[name].bundle.js'
 	},
+	optimization: {
+		splitChunks: {
+			chunks: 'all'
+		}
+	},
+	mode: process.env.NODE_ENV,
 	module: {
 		rules: [
 			{
 				test: /\.vue$/,
-				loader: 'vue-loader',
-				options: {
-					loaders: {}
-					// other vue-loader options go here
-				}
+				loader: 'vue-loader'
 			},
 			{
 				test: /\.js$/,
 				loader: 'babel-loader',
 				exclude: /node_modules/
+			},
+			{
+				test: /\.css$/,
+				use: ['vue-style-loader', 'css-loader']
 			},
 			{
 				test: /\.(png|jpg|gif|svg)$/,
@@ -39,11 +47,18 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-		noInfo: true
+		noInfo: true,
+		hot: true
 	},
 	performance: {
-		hints: false
+		hints: 'warning'
 	},
+	plugins: [
+		new VueLoaderPlugin(),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'index.html')
+		})
+	],
 	devtool: '#eval-source-map'
 };
 
@@ -54,12 +69,6 @@ if (process.env.NODE_ENV === 'production') {
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: '"production"'
-			}
-		}),
-		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: true,
-			compress: {
-				warnings: false
 			}
 		}),
 		new webpack.LoaderOptionsPlugin({
