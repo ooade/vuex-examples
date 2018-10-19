@@ -1,6 +1,6 @@
 # Vuex Examples
 
-> This project aims to touch various aspects of Vuex while building several projects. Started off with Vue-CLI's [Webpack Simple](https://github.com/vuejs-templates/webpack-simple) template
+> This project aims to touch various aspects of Vuex while building several projects.
 
 ## Contents
 
@@ -12,14 +12,14 @@
 
 Browse through each project by going through the folders as listed below.
 
-- **starter-files**: A hello-world example
-- **auth**: An Auth example with Vuex
-- **counter**: A simple counter implementation with Vuex
-- **firestore**: A Simple FireStore implementation with Vuex
-- **gallery**: An Image Gallery implementation with Vuex
-- **simple-todo**: A Simple Todo implementation with Vuex
-- **shopping-cart**: A Shopping Cart implementation with Vuex
-- **todo**: A todo app implementation with Vuex
+- **Starter Files**: Where it all begins
+- **Auth**: An Auth example with Vuex
+- **Counter**: A simple counter implementation with Vuex
+- **Firestore**: A Simple FireStore implementation with Vuex
+- **Gallery**: An Image Gallery implementation with Vuex
+- **Simple Todo**: A Simple Todo implementation with Vuex
+- **Shopping Cart**: A Shopping Cart implementation with Vuex
+- **Todo**: A better todo app implementation with Vuex
 - [_Make request_](https://github.com/ooade/vuex-examples/issues/new)
 
 ### Getting Started
@@ -39,7 +39,7 @@ npm --prefix <project> run dev
 npm --prefix <project> run build
 ```
 
-Example: run the auth project
+Example: To run the auth project
 
 ```bash
 npm --prefix auth install
