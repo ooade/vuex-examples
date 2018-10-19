@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const webpack = require('webpack');
 
@@ -7,17 +8,12 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, './dist'),
 		publicPath: '/dist/',
-		filename: 'build.js'
+		filename: '[name].bundle.js',
+		chunkFilename: '[name].bundle.js'
 	},
 	optimization: {
 		splitChunks: {
-			cacheGroups: {
-				commons: {
-					test: /[\\/]node_modules[\\/]/,
-					name: 'vendor',
-					chunks: 'all'
-				}
-			}
+			chunks: 'all'
 		}
 	},
 	mode: process.env.NODE_ENV,
@@ -51,9 +47,15 @@ module.exports = {
 		}
 	},
 	performance: {
-		hints: false
+		hints: 'warning'
 	},
-	plugins: [new VueLoaderPlugin()],
+	plugins: [
+		new VueLoaderPlugin(),
+		new HtmlWebpackPlugin({
+			title: 'Auth - Vuex Examples',
+			template: path.join(__dirname, 'index.html')
+		})
+	],
 	devtool: '#eval-source-map'
 };
 

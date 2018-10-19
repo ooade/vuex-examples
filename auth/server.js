@@ -21,7 +21,10 @@ if (process.env.NODE_ENV === 'development') {
 	app.use(
 		webpackDevMiddleware(compiler, {
 			noInfo: true,
-			publicPath: config.output.publicPath
+			publicPath: config.output.publicPath,
+			writeToDisk: filePath => {
+				return /.*\.html$/.test(filePath);
+			}
 		})
 	);
 }
@@ -40,6 +43,6 @@ app.get('/auth/verify', requireAuth);
 
 app.use('/dist', express.static(process.cwd() + '/dist'));
 
-app.use((req, res) => res.sendFile(__dirname + '/index.html'));
+app.use((req, res) => res.sendFile(__dirname + '/dist/index.html'));
 
 app.listen(3000, () => console.log('Server Listening on PORT 3000'));
