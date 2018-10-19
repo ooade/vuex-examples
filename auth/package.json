@@ -15,7 +15,7 @@
 		"body-parser": "^1.18.2",
 		"express": "^4.16.3",
 		"jwt-simple": "^0.5.1",
-		"mongoose": "^5.3.1",
+		"mongoose": "^5.1.4",
 		"passport": "^0.4.0",
 		"passport-jwt": "^4.0.0",
 		"passport-local": "^1.0.0",
@@ -35,6 +35,7 @@
 		"vue-style-loader": "^4.1.2",
 		"vue-template-compiler": "^2.5.17",
 		"webpack": "^4.20.2",
-		"webpack-dev-middleware": "^1.12.2"
+		"webpack-cli": "^3.1.2",
+		"webpack-dev-middleware": "^3.4.0"
 	}
 }

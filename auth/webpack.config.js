@@ -9,6 +9,17 @@ module.exports = {
 		publicPath: '/dist/',
 		filename: 'build.js'
 	},
+	optimization: {
+		splitChunks: {
+			cacheGroups: {
+				commons: {
+					test: /[\\/]node_modules[\\/]/,
+					name: 'vendor',
+					chunks: 'all'
+				}
+			}
+		}
+	},
 	mode: process.env.NODE_ENV,
 	module: {
 		rules: [
@@ -53,12 +64,6 @@ if (process.env.NODE_ENV === 'production') {
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: '"production"'
-			}
-		}),
-		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: true,
-			compress: {
-				warnings: false
 			}
 		}),
 		new webpack.LoaderOptionsPlugin({
