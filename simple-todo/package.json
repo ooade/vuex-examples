@@ -11,8 +11,10 @@
 		"push-surge": "npm run -s build && surge ./ -d vuex-simple-todo.surge.sh"
 	},
 	"dependencies": {
+		"axios": "^0.26.0",
 		"superstatic": "^6.0.3",
 		"vue": "^2.5.17",
+		"vue-axios": "^3.4.1",
 		"vuex": "^2.5.0"
 	},
 	"devDependencies": {

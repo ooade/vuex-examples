@@ -18,7 +18,7 @@ export default {
 
   data() {
     return {
-      msg: 'Simple Todo'
+      msg: 'Simple Todo',
     }
   }
 }
@@ -39,6 +39,7 @@ a {
 }
 
 h1 {
+  margin-top: 30px;
   font-weight: normal;
 }
 
@@ -54,5 +55,8 @@ ul {
 
 li>div {
   margin-top: 10px;
+}
+li{
+  margin-top: 12px;
 }
 </style>
