@@ -43,7 +43,7 @@
 		</div>
 
 		<div>
-			<!-- segunda secçao -->
+			<!-- terceira secçao -->
 			<h1>Favoritos</h1>
 
 			<!-- lista -->

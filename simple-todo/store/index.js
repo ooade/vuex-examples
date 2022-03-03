@@ -33,7 +33,6 @@ export default new Vuex.Store({
 			axios.get(`${URL}facts/random?animal_type=cat&amount=${textImport}`)
 			.then(resp=>{
 				
-				console.log(state.todos)
 				if(textImport >=2){
 					resp.data.forEach(value => {
 						let text = value.text
