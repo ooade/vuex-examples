@@ -43,7 +43,7 @@
 		data() {
 			return {
 				search:"",
-				Lista: [],
+				
 
 				orders: {
 					bssid: true,
@@ -70,6 +70,9 @@
 
 			List() {	
 				store.commit('List')
+			},
+			List2() {	
+				store.commit('List2')
 			},
 
 			myFunction(ref) { 
